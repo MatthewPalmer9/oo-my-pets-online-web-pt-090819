@@ -34,5 +34,5 @@ class Owner
 
   def cats 
     Cat.all.map(){|cat| cat}
-  end  
+  end
 end
