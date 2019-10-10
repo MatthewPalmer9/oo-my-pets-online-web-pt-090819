@@ -5,10 +5,10 @@ class Cat
   def initialize(name)
     @name = name
     @owner = owner
-    owner  
+    owner
   end
 
-  def owner 
+  def owner
     owner = Owner.new(owner)
-  end 
+  end
 end
