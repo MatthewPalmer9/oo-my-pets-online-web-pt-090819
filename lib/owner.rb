@@ -36,5 +36,5 @@ class Owner
 
   def dogs
     Dog.all.selecr{|dog| dog.owner = self}
-  end 
+  end
 end
