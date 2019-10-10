@@ -1,3 +1,5 @@
+require 'pry'
+
 class Owner
   attr_accessor :owner
   attr_reader :name
@@ -6,4 +8,9 @@ class Owner
     @name = name
     @owner = owner
   end
+
+  def species 
+    "human"
+  end
+  binding.pry
 end
