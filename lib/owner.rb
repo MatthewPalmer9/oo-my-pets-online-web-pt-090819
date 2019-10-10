@@ -34,9 +34,9 @@ class Owner
 
   def cats
     Cat.all.collect(){|cat|
-      if cat.owner == nil 
-        cat.owner = self 
-      end 
+      if cat.owner == nil
+        cat.owner = self
+      end
       cat
     }
   end
