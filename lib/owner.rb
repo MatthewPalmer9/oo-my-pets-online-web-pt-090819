@@ -36,4 +36,3 @@ class Owner
     Cat.all.each(){|cat| cat.owner == self}
   end
 end
-binding.pry
