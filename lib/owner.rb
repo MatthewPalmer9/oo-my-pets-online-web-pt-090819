@@ -30,5 +30,9 @@ class Owner
 
   def self.reset_all
     @@all.clear()
-  end 
+  end
+
+  def cats 
+    Cat.all.map(){|cat| cat}
+  end  
 end
