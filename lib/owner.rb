@@ -33,6 +33,11 @@ class Owner
   end
 
   def cats
-    Cat.owner_selection
+    Cat.all.collect(){|cat|
+      if cat.owner == nil 
+        cat.owner = self 
+      end 
+      cat
+    }
   end
 end
