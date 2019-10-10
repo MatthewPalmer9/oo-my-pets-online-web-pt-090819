@@ -1,14 +1,12 @@
 require 'pry'
 
 class Owner
-  attr_accessor :owner
   attr_reader :name
 
   @@all = []
 
   def initialize(name)
     @name = name
-    @owner = owner
     @@all << self
   end
 
@@ -33,6 +31,6 @@ class Owner
   end
 
   def cats
-    Cat.all.collect{|cat| cat.owner == self }
+    Cat.all.select{|cat| cat.owner == self}
   end
 end
