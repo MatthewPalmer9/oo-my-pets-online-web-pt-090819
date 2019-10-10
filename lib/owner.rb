@@ -13,7 +13,7 @@ class Owner
     return "human"
   end
 
-  def say_species 
+  def say_species
     p "I am a human."
   end 
 end
