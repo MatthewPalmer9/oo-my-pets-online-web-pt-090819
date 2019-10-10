@@ -49,10 +49,6 @@ class Owner
   end
 
   def walk_dogs
-    Dog.all.each(){|dog|
-      if @mood != "happy"
-        @mood = "happy"
-      end
-    }
+    Dog.all.select(){|dog| dog.mood == "happy"}
   end
 end
