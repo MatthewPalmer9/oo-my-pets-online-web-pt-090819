@@ -9,7 +9,7 @@ class Owner
     @owner = owner
   end
 
-  def species 
+  def species
     "human"
   end
   binding.pry
