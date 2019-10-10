@@ -15,9 +15,9 @@ class Cat
 
   def self.all
     @@all
-  end 
+  end
 
   def owner_collection
-    @collection 
+    @collection
   end 
 end
