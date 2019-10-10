@@ -4,7 +4,7 @@ class Owner
   attr_accessor :owner
   attr_reader :name
 
-  @@all = [] 
+  @@all = []
   
   def initialize(name)
     @name = name
@@ -17,7 +17,7 @@ class Owner
 
   def say_species
     p "I am a human."
-  end 
+  end
 
   def self.all
     @@all
