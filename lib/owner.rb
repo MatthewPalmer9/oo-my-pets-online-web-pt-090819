@@ -10,7 +10,7 @@ class Owner
   end
 
   def species
-    "human"
+    return "human"
   end
   binding.pry
 end
