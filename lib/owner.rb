@@ -9,6 +9,7 @@ class Owner
   def initialize(name)
     @name = name
     @owner = owner
+    @@all << owner 
   end
 
   def species
