@@ -32,7 +32,7 @@ class Owner
     @@all.clear()
   end
 
-  def cats 
+  def cats
     Cat.all.each(){|cat| cat}
   end
 end
