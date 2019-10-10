@@ -33,6 +33,6 @@ class Owner
   end
 
   def cats 
-    Cat.all.map(){|cat| cat}
+    Cat.all.each(){|cat| cat}
   end
 end
