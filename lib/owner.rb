@@ -33,6 +33,6 @@ class Owner
   end
 
   def cats
-    Cat.all.collect(){|cat| cat if cat.owner = self}
+    Cat.all.each(){|cat| cat.owner}
   end
 end
